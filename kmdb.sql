@@ -135,17 +135,50 @@ CREATE TABLE roles (
     actor_id INTEGER,
     movie_id INTEGER,
     role_name TEXT
-)
+);
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
 
+INSERT into studios (
+    "studio_name"
+) VALUES (
+    "Warner Bros."
+);
+
+INSERT into movies (
+    "title",
+    "released"
+) VALUES (
+    "Batman Begins",
+    "2005"
+);
+
+INSERT into movies (
+    "title",
+    "released"
+) VALUES (
+    "The Dark Knight",
+    "2008"
+);
+
+INSERT into movies (
+    "title",
+    "released"
+) VALUES (
+    "The Dark Knight Rises",
+    "2012"
+);
+
+SELECT * from studios;
+
+
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
 .print ""
-
+SELECT * from movies;
 -- The SQL statement for the movies output
 -- TODO!
 
