@@ -421,29 +421,9 @@ INSERT into roles (
 );
 
 
-SELECT movies.title, actors.full_name, roles.role_name
-FROM roles 
-INNER JOIN actors ON actors.id = roles.actor_id
-INNER JOIN movies ON movies.id = roles.movie_id
-ORDER BY actors.id
-LIMIT 4;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-SELECT * from studios;
+--SELECT * from studios;
 
 
 -- Prints a header for the movies output
@@ -468,5 +448,8 @@ GROUP BY movies.id;
 -- The SQL statement for the cast output
 -- TODO!
 
-SELECT * from actors;
-*/
+SELECT movies.title, actors.full_name, roles.role_name
+FROM roles 
+INNER JOIN actors ON actors.id = roles.actor_id
+INNER JOIN movies ON movies.id = roles.movie_id
+ORDER BY movies.title;
