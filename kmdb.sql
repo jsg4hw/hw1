@@ -146,6 +146,7 @@ INSERT into studios (
     "Warner Bros."
 );
 
+-- Insert unique movie data
 INSERT into movies (
     "title",
     "released_in"
@@ -170,10 +171,12 @@ INSERT into movies (
     "2012"
 );
 
+--Update data that applies to all rows in Movies
 UPDATE movies SET 
     rating = "PG-13",
     studio_id = 1;
 
+--Inserts rows for each actor
 INSERT into actors (
     "full_name"
 ) VALUES (
@@ -191,7 +194,6 @@ INSERT into actors (
 ) VALUES (
     "Liam Neeson"
 );
-
 
 INSERT into actors (
     "full_name"
@@ -247,7 +249,7 @@ INSERT into actors (
     "Anne Hathaway"
 );
 
---ROLES--
+--Insert rows for each row--
 
 INSERT into roles (
     "role_name",
@@ -278,7 +280,6 @@ INSERT into roles (
     3,
     1
 );
-
 
 INSERT into roles (
     "role_name",
@@ -368,7 +369,6 @@ INSERT into roles (
     3,
     5
 );
-
 
 INSERT into roles (
     "role_name",
