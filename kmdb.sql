@@ -425,7 +425,22 @@ SELECT movies.title, actors.full_name, roles.role_name
 FROM roles 
 INNER JOIN actors ON actors.id = roles.actor_id
 INNER JOIN movies ON movies.id = roles.movie_id
-GROUP BY movies.title;
+ORDER BY actors.id
+LIMIT 4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 SELECT * from studios;
